@@ -52,5 +52,3 @@ func InsertionSort() {
         cin >> n;
     }
 }
-
-

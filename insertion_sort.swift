@@ -1,10 +1,8 @@
-﻿#include <iostream>
+import Foundation
 
-using namespace std;
+func InsertionSort() {
 
-void InsertionSort() {
-
-    int n;
+    var n;
 
     try {
         cout << "Enter positive size of array\n";

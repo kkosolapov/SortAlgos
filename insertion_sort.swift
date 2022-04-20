@@ -1,7 +1,5 @@
 import Foundation
 
-@main
-
 func InsertionSort() {
 
     var n;

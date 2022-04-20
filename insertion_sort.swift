@@ -16,7 +16,7 @@ func InsertionSort() {
             }
        
             else {
-                print('\n')
+                print("\n")
 
             var arr = [Int](n);
 
@@ -38,7 +38,7 @@ func InsertionSort() {
 
             }
 
-            print('\n');
+            print("\n");
 
             print("Sorted array\n")
             for i in 0...n {

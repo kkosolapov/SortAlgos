@@ -1,33 +1,36 @@
 import Foundation
 
+@main
+
 func InsertionSort() {
 
     var n;
 
-    try {
-        cout << "Enter positive size of array\n";
-        cin >> n;
+    do {
+        try 
+             print ("Enter positive size of array\n");
+             n=readline()
+            
+            if n < 1 {
+                print ("Size of array must be a positive int number")
+            }
+       
+            else {
+                print('\n')
 
-        if (n < 1 || n != int(n)) {
-            throw "Size of array must be a positive int number";
-        }
+            var arr = [Int](n);
 
-        else {
-            cout << '\n';
-
-            int* arr = new int[n];
-
-            for (int i = 0; i < n; i++) {
-                cin >> arr[i];
+            for i in  0...n {
+                arr[i] = readline();
             }
 
-            int i = 0;
+            var i = 0;
 
-            for (int j = 1; j < n; j++) {
-                int key = arr[j];
+            for j in 1...n{
+                var key = arr[j];
                 i = j - 1;
 
-                while ((i >= 0) && arr[i] > key) {
+                while i >= 0 && arr[i] > key {
                     arr[i + 1] = arr[i];
                     i = i - 1;
                     arr[i + 1] = key;
@@ -35,20 +38,22 @@ func InsertionSort() {
 
             }
 
-            cout << '\n';
+            print('\n');
 
-            cout << "Sorted array\n";
-            for (int i = 0; i < n; i++) {
-                cout << arr[i];
+            print("Sorted array\n")
+            for i in 0...n {
+                print(arr[i]);
             }
-
-            delete[]arr;
-            cout << '\n';
+                
+            print("\n");
+        
         }
-
+       
     }
 
-    catch (int i) {
-        cin >> n;
+    catch let i{
+        n = readline;
     }
 }
+
+InserionSort()

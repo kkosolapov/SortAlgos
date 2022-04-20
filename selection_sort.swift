@@ -1,31 +1,39 @@
-void SelectionSort()
-{
-    int n;
+import Foundation
+
+func SelectionSort(){
+    
+    var n;
 
     try {
         cout << "Enter positive size of array\n";
         cin >> n;
 
-        if (n < 1 || n != int(n)) {
-            throw "Size of array must be a positive int number";
-        }
+        do {
+        try 
+             print ("Enter positive size of array\n");
+             n=readline()
+            
+            if n < 1 {
+                print ("Size of array must be a positive int number")
+            }
+       
+            else {
+                print("\n")
 
-        else {
-            cout << '\n';
+            var arr = [Int](n);
 
-            int* arr = new int[n];
-
-            for (int i = 0; i < n; i++) {
-                cin >> arr[i];
+            for i in  0...n {
+                arr[i] = readline();
             }
 
-            int i, min, n_min, j;
+            var i, min, n_min, j;
 
-            for (i = 0; i < n - 1; i++) {
+            for i in 0...n - 1; i++) {
+                
                 min = arr[i];
                 n_min = i;
 
-                for (j = i + 1; j < n; j++) {
+                for j in i + 1...n {
                     if (arr[j] < min) {
                         min = arr[j];
                         n_min = j;
@@ -36,21 +44,21 @@ void SelectionSort()
                 }
             }
 
-            cout << '\n';
+            print ("\n");
 
-            cout << "Sorted array\n";
-            for (int i = 0; i < n; i++) {
-                cout << arr[i];
+            print("Sorted array\n");
+            for  i in  0...n {
+                print(arr[i]);
             }
 
-            delete[]arr;
-            cout << '\n';
+            print("\n");
         }
 
     }
 
-    catch (int i) {
-        cin >> n;
+    catch let i{
+        n = readline;
     }
 }
 
+SelectionSort()

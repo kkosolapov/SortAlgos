@@ -40,8 +40,8 @@ func merge<T: Comparable>(leftPile: [T], rightPile: [T]) -> [T] {
 
 func mergeSortBottomUp<T>(_ a: [T], _ isOrderedBefore: (T, T) -> Bool) -> [T] {
   let n = a.count
-  var z = [a, a]   // the two working arrays
-  var d = 0        // z[d] is used for reading, z[1 - d] for writing
+  var z = [a, a]  
+  var d = 0       
   var width = 1
   while width < n {
 

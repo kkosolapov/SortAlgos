@@ -10,4 +10,4 @@ func mergeSort(array: [Int]) -> [Int] {
     return merge(left: left, right: right)
 }
 
-print(insertionSort(array: array))
+print(mergeSort(array: array))

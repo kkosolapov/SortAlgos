@@ -1,4 +1,4 @@
-var array = [1,2,3,5,4,6,7,8,9,10]
+var array = [1,3,2,5,4,8,6,10,7,9]
 
 func shellSort(array: inout [Int]) {
     let n = array.count
